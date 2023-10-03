@@ -38,7 +38,7 @@ public class RollDices {
      * If the player has not hold, the player is playing, else the player is not playing.
      */
     public void play(){
-        int n = 0;
+        int n;
 
         //If n is not 1, the player is playing, else the player is not playing.
         if(!((n = throwDices())==1)){
@@ -55,15 +55,13 @@ public class RollDices {
     public String winner(){
         String winner = "";
 
-        //Check if players are not empty.
-        if(players.containsKey("player1") || players.containsKey("player2")){
+            //Check if the players are not null.
             //Check if the player 1 or the player 2 has won.
-            if(players.get("player1") >= 100){
+            if(players.get("player1") != null && players.get("player1") >= 100){
                 winner = "player1";
-            }else if(players.get("player2") >= 100){
+            }else if(players.get("player1") != null && players.get("player2") >= 100){
                 winner = "player2";
             }
-        }
 
         //Return the winner.
         return winner;
