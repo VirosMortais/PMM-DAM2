@@ -23,13 +23,25 @@ public class RollDices {
             players.put("player2", 0);
     }
 
+
+    /**
+     * This method is used to throw the dices.
+     * @return the value of the dices.
+     */
+    public static int throwDices(){
+        return (int) (Math.random() *6) + 1;
+    }
+
+
     /**
      * This method is used to play the game.
      * If the player has not hold, the player is playing, else the player is not playing.
      */
     public void play(){
         int n = 0;
-        if(!((n = Dice.throwDices())==1)){
+
+        //If n is not 1, the player is playing, else the player is not playing.
+        if(!((n = throwDices())==1)){
             roundScore += n;
         }else{
             this.setHold(this.invertedHold());
@@ -40,12 +52,21 @@ public class RollDices {
     /**
      * This method is used to check if the player has won.
      */
-    public void winner(){
-        if(players.get("player1") >= 100){
-            System.out.println("Player 1 wins");
-        }else if(players.get("player2") >= 100){
-            System.out.println("Player 2 wins");
+    public String winner(){
+        String winner = "";
+
+        //Check if players are not empty.
+        if(players.containsKey("player1") || players.containsKey("player2")){
+            //Check if the player 1 or the player 2 has won.
+            if(players.get("player1") >= 100){
+                winner = "player1";
+            }else if(players.get("player2") >= 100){
+                winner = "player2";
+            }
         }
+
+        //Return the winner.
+        return winner;
     }
 
     /**
