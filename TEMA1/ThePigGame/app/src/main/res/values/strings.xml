@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">ThePigGame</string>
-    <string name="currentValue">CURRENT 0</string>
+    <string name="currentValue">CURRENT</string>
     <string name="holdNameButton">HOLD</string>
     <string name="newGameNameButton">NEW GAME</string>
     <string name="rollDiceNameButton">ROLL DICE</string>
     <string name="player2View">PLAYER 2</string>
     <string name="player1View">PLAYER 1</string>
     <string name="numberZero">0</string>
+    <string name="winMessage">WINNER!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
