@@ -126,6 +126,11 @@ public class MainActivity extends AppCompatActivity {
             //Update the current value of the player 1.
             TextView currentValuePlayer1 = findViewById(R.id.currentValuePlayer1);
             currentValuePlayer1.setText(getResources().getString(R.string.numberZero));
+
+
+            //Set the text views invisible.
+            winnerTextView1.setVisibility(View.INVISIBLE);
+            winnerTextView2.setVisibility(View.INVISIBLE);
         });
     }
 
