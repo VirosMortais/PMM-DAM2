@@ -1,0 +1,11 @@
+name: Ej07
+description: A new dart project.
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  http: ^0.13.3
+
+dev_dependencies:
+  pedantic: ^1.11.0
