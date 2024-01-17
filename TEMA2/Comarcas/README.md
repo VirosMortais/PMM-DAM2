@@ -1,6 +1,7 @@
 # ComarquesVirosms
 
-![Logo](https://github.com/VirosMs/ComarquesVirosMs/assets/94723454/707f496c-3b03-4f56-9a3c-db9dbdf6a4cd)
+![Logo](https://github.com/VirosMs/PMM-DAM2/assets/94723454/91a3b40f-5de1-4527-8ddf-8c550ffedf22)
+
 
 ## Descripción del Proyecto
 
